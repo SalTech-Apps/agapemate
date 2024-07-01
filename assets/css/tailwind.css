@@ -1,0 +1,32 @@
+@import url('https://fonts.cdnfonts.com/css/archivo');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    color:"#21201F";
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Itim", cursive;
+    font-style: normal;
+}
+.faq-answer {
+    padding:0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    /* transition: max-height 0.3s ease; */
+
+}
+
+.faq-answer.open {
+    max-height: 500px; /* Adjust as needed */
+    padding: 0.5rem 0.8rem;
+}

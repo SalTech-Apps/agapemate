@@ -1,0 +1,28 @@
+<header class="bg-white py-4 shadow">
+  <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold text-black">Fresh</div>
+      <nav class="hidden md:flex gap-12">
+          <a href="#" class="text-orange-600">Home</a>
+          <a href="#" class="text-gray-700">How it works</a>
+          <a href="#" class="text-gray-700">Pricing</a>
+          <a href="#" class="text-gray-700">About</a>
+          <a href="#" class="text-gray-700">Contact</a>
+      </nav>
+      <a href="#" class="hidden md:block bg-orange-600 text-white py-2 px-4 rounded-full">Get The App</a>
+      <div class="block md:hidden">
+          <i onclick="toggleMobileMenu()" class="fas fa-bars text-black text-2xl cursor-pointer" id="menu-icon"></i>
+          <i onclick="toggleMobileMenu()" class="fas fa-times text-black text-2xl cursor-pointer hidden" id="close-icon"></i>
+      </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu md:hidden bg-white w-full" id="mobile-menu">
+      <nav class="flex flex-col items-center py-6">
+          <a href="#" class="text-orange-600 py-2">Home</a>
+          <a href="#" class="text-gray-700 py-2">How it works</a>
+          <a href="#" class="text-gray-700 py-2">Pricing</a>
+          <a href="#" class="text-gray-700 py-2">About</a>
+          <a href="#" class="text-gray-700 py-2">Contact</a>
+          <a href="#" class="bg-orange-600 text-white py-2 px-4 rounded-full mt-4">Get The App</a>
+      </nav>
+  </div>
+</header>
