@@ -27,6 +27,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .faq-answer.open {
-    max-height: 500px; /* Adjust as needed */
+    max-height: 500px;
     padding: 0.5rem 0.8rem;
 }
