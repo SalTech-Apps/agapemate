@@ -2319,6 +2319,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-12{
+  padding-top: 3rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -3093,6 +3097,11 @@ h1,h2,h3,h4,h5,h6{
   .md\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:pt-20{
