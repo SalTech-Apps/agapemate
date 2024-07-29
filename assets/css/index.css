@@ -1227,6 +1227,10 @@ video {
   list-style-type: none;
 }
 
+.list-disc{
+  list-style-type: disc;
+}
+
 .appearance-none{
   -webkit-appearance: none;
           appearance: none;
