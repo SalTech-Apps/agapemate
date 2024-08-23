@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Include the head section -->
   <include src="./components/Head/terms.html"></include>
+
   <body>
+    <!-- Include the header section -->
     <include src="./components/header.html"></include>
 
-    <main class="w-full">
+    <main id="main-content" class="w-full">
+      <!-- Main Section Header -->
       <div class="bg-primary px-12 py-8 text-center">
         <h1 class="font-normal text-2xl md:text-4xl xl:text-6xl text-white">
           Privacy Policy for AgapeMate
         </h1>
       </div>
+
+      <!-- Main Content -->
       <div
         class="flex p-4 md:p-12 text-gray-800 container mx-auto flex-wrap justify-between items-start"
       >
-        <nav class="my-6">
+        <!-- Navigation Section -->
+        <nav class="my-6" aria-label="Privacy Policy Navigation">
           <ul class="list-none list-inside flex flex-col gap-6">
             <li>
-              <a href="#introduction" class="text-zinc-700 hover:underline"
-                >Introduction</a
-              >
+              <a href="#introduction" class="text-zinc-700 hover:underline">Introduction</a>
             </li>
             <li>
-              <a href="#information-collect" class="text-zinc-700 hover:underline"
-                >Information We Collect</a
-              >
+              <a href="#information-collect" class="text-zinc-700 hover:underline">Information We Collect</a>
             </li>
             <li>
-              <a href="#use-information" class="text-zinc-700 hover:underline"
-                >How We Use Your Information</a
-              >
+              <a href="#use-information" class="text-zinc-700 hover:underline">How We Use Your Information</a>
             </li>
             <li>
-              <a href="#share-information" class="text-zinc-700 hover:underline"
-                >How We Share Your Information</a
-              >
+              <a href="#share-information" class="text-zinc-700 hover:underline">How We Share Your Information</a>
             </li>
             <li>
-              <a href="#your-rights" class="text-zinc-700 hover:underline"
-                >Your Rights</a
-              >
+              <a href="#your-rights" class="text-zinc-700 hover:underline">Your Rights</a>
             </li>
             <li>
-              <a href="#security" class="text-zinc-700 hover:underline"
-                >Security</a
-              >
+              <a href="#security" class="text-zinc-700 hover:underline">Security</a>
             </li>
             <li>
-              <a href="#changes-policy" class="text-zinc-700 hover:underline"
-                >Changes to This Privacy Policy</a
-              >
+              <a href="#changes-policy" class="text-zinc-700 hover:underline">Changes to This Privacy Policy</a>
             </li>
             <li>
-              <a href="#contact-us" class="text-zinc-700 hover:underline"
-                >Contact Us</a
-              >
+              <a href="#contact-us" class="text-zinc-700 hover:underline">Contact Us</a>
             </li>
           </ul>
         </nav>
+
+        <!-- Content Section -->
         <div class="max-w-4xl mx-auto p-4">
           <header class="text-center mb-8">
             <p class="text-sm">Last Updated July 27th, 2024</p>
           </header>
 
-          <section id="introduction">
+          <!-- Privacy Policy Sections -->
+          <section id="introduction" class="mb-6">
             <h2 class="text-xl font-semibold mb-2">1. Introduction</h2>
-            <p>
-              Welcome to AgapeMate. We respect your privacy and want to protect your personal information. This Privacy Policy explains how we collect, use, and disclose your information.
-            </p>
+            <p>Welcome to AgapeMate. We respect your privacy and want to protect your personal information. This Privacy Policy explains how we collect, use, and disclose your information.</p>
           </section>
 
           <section id="information-collect" class="mb-6">
@@ -121,13 +113,15 @@
         </div>
       </div>
 
+      <!-- Include the Download App Banner -->
       <include src="./components/DownloadAppBanner/index.html"></include>
     </main>
 
     <!-- FOOTER -->
     <include src="./components/footer.html"></include>
 
-    <script src="../../assets/js/faq_collapse.js"></script>
-    <script src="../../assets/js/navbar.js"></script>
+    <!-- External Scripts -->
+    <script src="../../assets/js/faq_collapse.js" defer></script>
+    <script src="../../assets/js/navbar.js" defer></script>
   </body>
 </html>

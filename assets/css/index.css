@@ -1223,12 +1223,11 @@ video {
   list-style-position: outside;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
 .list-none{
   list-style-type: none;
-}
-
-.list-disc{
-  list-style-type: disc;
 }
 
 .appearance-none{
@@ -2933,9 +2932,9 @@ h1,h2,h3,h4,h5,h6{
 
 .faq-answer {
   padding:0;
-  max-height: 0;
+  max-height: 20rem;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
+  transition: max-height 2s ease, padding 0.3s ease;
   /* transition: max-height 0.3s ease; */
 }
 

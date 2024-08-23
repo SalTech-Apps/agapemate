@@ -1,32 +1,39 @@
 function toggleFAQ(element) {
-    const answer = element.nextElementSibling;
-    const allAnswers = document.querySelectorAll('.faq-answer');
-    const allButtons = document.querySelectorAll('button');
+  const answer = element.nextElementSibling;
+  const allAnswers = document.querySelectorAll(".faq-answer");
+  const allButtons = document.querySelectorAll("button[aria-expanded]");
 
-    allAnswers.forEach(ans => {
-        if (ans !== answer) {
-            ans.classList.remove('open');
-            ans.previousElementSibling.classList.remove('bg-primary', 'text-white');
-            ans.previousElementSibling.querySelector('span:nth-child(2)').textContent = '+';
-      
-        }
-    });
-
-    allButtons.forEach(btn => {
-        if (btn !== element && btn.querySelector('span:nth-child(2)')) {
-            btn.classList.remove('bg-primary', 'text-white');
-            btn.querySelector('span:nth-child(2)').textContent = '+';
-        }
-    });
-
-    if (answer.classList.contains('open')) {
-        answer.classList.remove('open');
-        element.querySelector('span:nth-child(2)').textContent = '+';
-        element.classList.remove('bg-primary', 'text-white');
-    } else {
-        answer.classList.add('open');
-        element.querySelector('span:nth-child(2)').textContent = '-';
-        element.classList.add('bg-primary', 'text-white');
+  // Close all other FAQ answers
+  allAnswers.forEach((ans) => {
+    if (ans !== answer) {
+      ans.classList.add("hidden");
+      ans.setAttribute("aria-hidden", "true");
     }
+  });
+
+  // Reset the state of all other buttons
+  allButtons.forEach((btn) => {
+    if (btn !== element) {
+      btn.setAttribute("aria-expanded", "false");
+      btn.classList.remove("bg-primary", "text-white");
+      btn.querySelector(".faq-icon").textContent = "+";
+    }
+  });
+
+  // Toggle the clicked FAQ answer
+  const isOpen = element.getAttribute("aria-expanded") === "true";
+  if (isOpen) {
+    answer.classList.add("hidden");
+    answer.setAttribute("aria-hidden", "true");
+    element.setAttribute("aria-expanded", "false");
+    element.classList.remove("bg-primary", "text-white");
+    element.querySelector(".faq-icon").textContent = "+";
+  } else {
+    answer.classList.remove("hidden");
+    answer.setAttribute("aria-hidden", "false");
+    element.setAttribute("aria-expanded", "true");
+    element.classList.add("bg-primary", "text-white");
+    element.querySelector(".faq-icon").textContent = "-";
+  }
 }
-// 
+  
