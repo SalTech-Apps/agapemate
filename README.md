@@ -1,7 +1,6 @@
 # Dating App Landing Page
 
-Welcome to the repository for our Dating App Landing Page. This project is built using modern web technologies and tools to create a responsive and interactive landing page.
-
+Welcome to the repository for AgapeMate App Landing Page.
 
 ## Table of Contents
 
