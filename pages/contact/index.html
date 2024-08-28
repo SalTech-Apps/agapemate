@@ -122,6 +122,8 @@
 
           emailjs.sendForm("service_xw6j1ew", "template_5abxs29", this).then(
             function () {
+              document.getElementById("contact-form").reset();
+
               alert("Message sent successfully!");
             },
             function (error) {
