@@ -1,9 +1,12 @@
 {
-  "source": "./pages/home/index.html",
+  "source": [
+    "./pages/home/index.html",
+    "./pages/contact/index.html"
+  ],
   "scripts": {
     "start": "concurrently \"npm run dev\" \"parcel --open\"",
     "prebuild": "rimraf .parcel-cache && rimraf dist",
-    "build": "parcel build --no-optimize --no-cache --public-url ./",
+    "build": "parcel build  --no-optimize --no-cache --public-url ./ ",
     "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css --watch"
   },
   "devDependencies": {
