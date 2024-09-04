@@ -1,15 +1,16 @@
 {
   "source": [
-    "./pages/index.html",
-    "./pages/contact/index.html",
-    "./pages/terms/index.html",
-    "./pages/privacy/index.html"
+    "./src/pages/home/index.html",
+    "./src/pages/contact/index.html",
+    "./src/pages/terms/index.html",
+    "./src/pages/privacy/index.html"
   ],
+  "entry": "./src/pages/home/index.html",
   "scripts": {
     "start": "concurrently \"npm run dev\" \"parcel --open\"",
     "prebuild": "rimraf .parcel-cache && rimraf dist",
-    "build": "parcel build --no-optimize --no-cache --public-url ./",
-    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css --watch"
+    "build": "parcel build --no-optimize --no-cache --public-url ../",
+    "dev": "npx tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/index.css --watch"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
