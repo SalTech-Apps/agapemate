@@ -6,6 +6,7 @@
     "build": "parcel build",
     "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css --watch"
   },
+  
   "devDependencies": {
     "concurrently": "^8.2.2",
     "parcel": "^2.12.0",
