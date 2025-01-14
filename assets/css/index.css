@@ -971,6 +971,10 @@ video {
   height: 200px;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .h-full{
   height: 100%;
 }
@@ -989,6 +993,10 @@ video {
 
 .w-20{
   width: 5rem;
+}
+
+.w-40{
+  width: 10rem;
 }
 
 .w-\[this-is\\\\\]{
@@ -1013,6 +1021,10 @@ video {
 
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .flex-shrink{
@@ -2976,32 +2988,6 @@ video {
   a-z-a--z:  !important;
 }
 
-body{
-  color:"#21201F";
-  font-family: "Sniglet", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  background-color: white;
-}
-
-h1,h2,h3,h4,h5,h6{
-  font-family: "Itim", cursive;
-  font-style: normal;
-}
-
-.faq-answer {
-  padding:0;
-  max-height: 20rem;
-  overflow: hidden;
-  transition: max-height 1s ease, padding 0.9s ease;
-  /* transition: max-height 0.3s ease; */
-}
-
-.faq-answer.open {
-  max-height: 500px;
-  padding: 0.5rem 0.8rem;
-}
-
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -3115,16 +3101,16 @@ h1,h2,h3,h4,h5,h6{
     width: 50%;
   }
 
-  .md\:w-1\/3{
-    width: 33.333333%;
-  }
-
   .md\:w-2\/4{
     width: 50%;
   }
 
   .md\:w-2\/6{
     width: 33.333333%;
+  }
+
+  .md\:w-60{
+    width: 15rem;
   }
 
   .md\:w-\[33\%\]{
@@ -3209,11 +3195,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 @media (min-width: 1280px){
-  .xl\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;

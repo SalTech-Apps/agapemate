@@ -3,7 +3,7 @@
   "scripts": {
     "start": "concurrently \"npm run dev\" \"parcel --open\"",
     "prebuild": "rimraf .parcel-cache && rimraf dist",
-    "build": "parcel build --no-source-maps",
+    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css && parcel build --no-source-maps",
     "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css --watch"
   },
   "devDependencies": {
@@ -17,15 +17,6 @@
   "dependencies": {
     "browserslist": "^4.23.0",
     "rimraf": "^5.0.7"
-  },
-  "staticFiles": {
-    "staticPath": [
-      {
-        "staticPath": "assets",
-        "staticOutDir": "assets"
-      }
-    ],
-    "watcherGlob": "**"
   },
   "browserslist": {
     "production": [
