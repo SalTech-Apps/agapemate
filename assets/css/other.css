@@ -1,0 +1,36 @@
+body {
+    color: "#21201F";
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Itim", cursive;
+    font-style: normal;
+}
+
+.faq-answer {
+    padding: 0;
+    max-height: 20rem;
+    overflow: hidden;
+    transition: max-height 1s ease, padding 0.9s ease;
+    /* transition: max-height 0.3s ease; */
+
+}
+
+.faq-answer.open {
+    max-height: 500px;
+    padding: 0.5rem 0.8rem;
+}
+
+.openMenu {
+    display: block !important;
+    transition: all 1s ease;
+}

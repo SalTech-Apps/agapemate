@@ -37,3 +37,4 @@ function toggleFAQ(element) {
   }
 }
   
+export { toggleFAQ };

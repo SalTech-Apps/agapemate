@@ -1,12 +1,11 @@
 {
-  "source": "./pages/home/index.html",
+  "source": "./pages/index.html",
   "scripts": {
     "start": "concurrently \"npm run dev\" \"parcel --open\"",
     "prebuild": "rimraf .parcel-cache && rimraf dist",
-    "build": "parcel build",
+    "build": "parcel build --no-source-maps",
     "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css --watch"
   },
-  
   "devDependencies": {
     "concurrently": "^8.2.2",
     "parcel": "^2.12.0",
@@ -19,6 +18,15 @@
     "browserslist": "^4.23.0",
     "rimraf": "^5.0.7"
   },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "assets",
+        "staticOutDir": "assets"
+      }
+    ],
+    "watcherGlob": "**"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -30,6 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  }
 }
