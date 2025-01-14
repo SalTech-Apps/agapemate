@@ -1,0 +1,1 @@
+body{color:"#21201F";background-color:#fff;font-family:Sniglet,system-ui;font-style:normal;font-weight:400}h1,h2,h3,h4,h5,h6{font-family:Itim,cursive;font-style:normal}.faq-answer{max-height:20rem;padding:0;transition:max-height 1s,padding .9s;overflow:hidden}.faq-answer.open{max-height:500px;padding:.5rem .8rem}.openMenu{transition:all 1s;display:block!important}
