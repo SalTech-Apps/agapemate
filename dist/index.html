@@ -17,7 +17,7 @@
   <div class="container mx-auto flex justify-between items-center">
     <!-- Logo Section -->
     <div class="text-2xl text-black">
-      <a href="/" aria-label="Agapemate Home" class="w-40">
+      <a href="/" aria-label="Agapemate Home" class="w-40 block">
         <img class="w-full h-auto" src="https://res.cloudinary.com/dbr3c0f1q/image/upload/f_auto,q_auto/v1/logos/agapemate/djyx5c6wbenp9nbknocc" alt="Agapemate Logo">
       </a>
     </div>
@@ -33,7 +33,7 @@
     </nav>
 
     <!-- Get The App Button -->
-    <a href="#" class="hidden md:block bg-orange-600 text-white py-2 px-4 rounded-full">Get The App</a>
+    <a target="_blank" href="https://www.google.com/search?q=agapemate+app+for+ios+and+play+store" class="hidden md:block bg-orange-600 text-white py-2 px-4 rounded-full">Get The App</a>
 
     <!-- Mobile Menu Toggle Button -->
     <div class="block md:hidden">
@@ -54,10 +54,11 @@
       <a href="/#pricing" class="text-gray-700 py-2">Pricing</a>
       <a href="/#about" class="text-gray-700 py-2">About</a>
       <a href="/#contact" class="text-gray-700 py-2">Contact</a>
-      <a href="/#" class="bg-orange-600 text-white py-2 px-4 rounded-full mt-4">Get The App</a>
+      <a target="_blank" href="https://www.google.com/search?q=agapemate+app+for+ios+and+play+store" class="bg-orange-600 text-white py-2 px-4 rounded-full mt-4">Get The App</a>
     </nav>
   </div>
 </header>
+
 
     <main class="w-full pt-16 md:pt-20">
       <div id="about" class="bg-white text-gray-900">
@@ -744,6 +745,7 @@ gtag("config", "AW-16698291433");
       <ul class="space-y-1">
         <li><a href="/" class="text-gray-600">Home</a></li>
         <li><a href="/#how-it-works" class="text-gray-600">How it works</a></li>
+        <li><a href="/contact" class="text-gray-600">Contact</a></li>
       </ul>
     </nav>
 
@@ -763,14 +765,34 @@ gtag("config", "AW-16698291433");
 
     <!-- Newsletter Subscription -->
     <div class="w-full md:w-fit mt-4 md:mt-0">
-      <h4 class="text-2xl text-primary">Get the latest information</h4>
-      <form class="flex mt-2" aria-label="Newsletter subscription">
-        <label for="newsletter-email" class="sr-only">Email Address</label>
-        <input id="newsletter-email" type="email" placeholder="Email Address" class="w-full p-2 border border-gray-300 rounded-l-lg" required="">
-        <button class="bg-orange-600 text-white py-2 px-4 rounded-r-lg" aria-label="Subscribe">
-          <span aria-hidden="true">&gt;</span>
-        </button>
-      </form>
+      <h4 class="text-2xl text-primary">Connect with Us</h4>
+
+      <div class="flex items-center justify-start">
+  <ul class="space-y-4">
+    <!-- Facebook -->
+    <li>
+      <a href="https://www.facebook.com/profile.php?id=61571513259432" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition duration-300">
+        <i class="fab fa-facebook text-2xl mr-3"></i>
+        <span class="text-lg">Facebook</span>
+      </a>
+    </li>
+    <!-- Twitter -->
+    <li>
+      <a href="https://x.com/Agape_Mate1?s=09" target="_blank" class="flex items-center text-gray-700 hover:text-blue-400 transition duration-300">
+        <i class="fab fa-twitter text-2xl mr-3"></i>
+        <span class="text-lg">X (Twitter)</span>
+      </a>
+    </li>
+    <!-- Instagram -->
+    <li>
+      <a href="https://www.instagram.com/agape_mate?igsh=MW9qZzF4ejJsaDZs" target="_blank" class="flex items-center text-gray-700 hover:text-red-400 transition duration-300">
+        <i class="fab fa-instagram text-2xl mr-3"></i>
+        <span class="text-lg">Instagram</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
   </div>
 
