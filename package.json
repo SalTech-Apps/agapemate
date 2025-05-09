@@ -3,8 +3,9 @@
   "scripts": {
     "start": "concurrently \"npm run dev\" \"parcel --open\"",
     "prebuild": "rimraf .parcel-cache && rimraf dist",
-    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css && parcel build --no-source-maps",
-    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css --watch"
+    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css && parcel build --no-source-maps && npm run copy-ads",
+    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/index.css --watch",
+    "copy-ads": "cp pages/app-ads.txt dist/app-ads.txt"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",

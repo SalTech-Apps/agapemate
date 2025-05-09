@@ -1301,16 +1301,16 @@ video {
   list-style-position: outside;
 }
 
+.list-decimal{
+  list-style-type: decimal;
+}
+
 .list-disc{
   list-style-type: disc;
 }
 
 .list-none{
   list-style-type: none;
-}
-
-.list-decimal{
-  list-style-type: decimal;
 }
 
 .appearance-none{
@@ -2459,10 +2459,6 @@ video {
   vertical-align: super;
 }
 
-.font-serif{
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
 .font-sans{
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -2631,16 +2627,6 @@ video {
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.text-green-600{
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
-}
-
-.text-green-700{
-  --tw-text-opacity: 1;
-  color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
 .text-orange-600{
